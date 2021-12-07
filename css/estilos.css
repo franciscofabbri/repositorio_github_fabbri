@@ -12,10 +12,10 @@ header{
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 .nav_bar{
     display: flex;
-    grid-area: nav;
     text-decoration: none;
     background-color: transparent;
     justify-content: center;
@@ -55,6 +55,71 @@ header{
     text-decoration: underline;
 }
 /* END NAVBAR */
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+    z-index: 0;
+}
+
+.overlay {
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.overlay h1 {
+    background: #000 none repeat scroll 0 0;
+    color: #fc2a02;
+    font-weight: 600;
+    margin: 2rem 3rem 0;
+    mix-blend-mode: overlay;
+    padding: 5px 15px;
+    text-align: center;
+}
+
+.overlay p {
+    background: #000 none repeat scroll 0 0;
+    color: tan;
+    font-weight: 600;
+    margin: 2rem 3rem 0;
+    mix-blend-mode: overlay;
+    padding: 5px 15px;
+    text-align: center;
+}
+
+.overlay ul {
+    background: #000 none repeat scroll 0 0;
+    color: tan;
+    font-weight: 600;
+    margin: 2rem 3rem 0;
+    mix-blend-mode: overlay;
+    padding: 5px 15px;
+    text-align: center;
+}
+
+/*.overlay ul li {
+    background: #000 none repeat scroll 0 0;
+    color: tan;
+    font-weight: 600;
+    margin: 2rem 3rem 0;
+    mix-blend-mode: overlay;
+    padding: 5px 15px;
+    text-align: center;
+}*/
 
 .titles{
     font-family: Roboto , sans-serif;
@@ -96,7 +161,7 @@ header{
     align-items: center;
     justify-content: start;
     background: rgb(44,184,211);
-background: linear-gradient(90deg, rgba(44,184,211,1) 0%, rgba(17,205,238,1) 29%, rgba(26,229,217,1) 100%);
+    background: linear-gradient(90deg, rgba(44,184,211,1) 0%, rgba(17,205,238,1) 29%, rgba(26,229,217,1) 100%);
 ;
     /*padding: 117px;*/
     /*background-color: white;*/
@@ -106,11 +171,11 @@ background: linear-gradient(90deg, rgba(44,184,211,1) 0%, rgba(17,205,238,1) 29%
     grid-area: tit;
     background-color: transparent;
 }
-.container-about-us img{
+/*.container-about-us img{
     grid-area: img;
     background-color: transparent;
     width: 70%;
-}
+}*/
 .container-about-us .content{
     grid-area: cont;
     background-color: transparent;
@@ -238,9 +303,11 @@ background: linear-gradient(90deg, rgba(44,184,211,1) 0%, rgba(17,205,238,1) 29%
 /*Where we are section*/
 
 .container-where-we-are{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: rgb(44,184,211);
-background: linear-gradient(90deg, rgba(44,184,211,1) 0%, rgba(17,205,238,1) 29%, rgba(26,229,217,1) 100%);
-;
+    background: linear-gradient(90deg, rgba(44,184,211,1) 0%, rgba(17,205,238,1) 29%, rgba(26,229,217,1) 100%);
     justify-content: center;
     padding: 200px;
 }
