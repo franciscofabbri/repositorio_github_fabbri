@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,100;1,700&family=Yanone+Kaffeesatz:wght@200;300;400&display=swap');
+
+  * {
+    margin: 0;
+    padding: 0;
+    /*list-style-type: none;*/
+}
+
+
+/* NAVBAR */
+header{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+.nav_bar{
+    display: flex;
+    grid-area: nav;
+    text-decoration: none;
+    background-color: transparent;
+    justify-content: center;
+}
+.logo{
+    display: flex;
+}
+.logo h1{
+    display: flex;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color: steelblue;
+    align-items: center;
+    justify-content: center;
+    top: 15px;
+}
+.nav_bar img{
+    width: 10%;
+}
+.nav_bar ul{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.nav_bar li{
+    margin-left: 20px;
+    list-style-type: none;
+}
+.nav_bar ul li a{
+    text-decoration: none;
+    font-family: 'Roboto' , sans-serif;
+    color: steelblue;
+    font-size: 14px;
+    font-weight: bold;
+}
+.nav_bar ul li a:hover{
+    color: lightskyblue;
+    text-decoration: underline;
+}
+/* END NAVBAR */
+
+.titles{
+    font-family: Roboto , sans-serif;
+    color: #D3472C;
+    font-weight: bolder;
+    font-size: 60px;
+}
+
+.subtitles{
+    font-family: Roboto , sans-serif;
+    color: #D3472C;
+    font-weight: inherit;
+    font-size: 50px;
+}
+
+.sections_text {
+    font-family: Roboto , sans-serif;
+    color: b45346;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.sections_text ul{
+    font-family: Roboto , sans-serif;
+    color: skyblue;
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+.container-about-us{
+    display: grid;
+    grid-template-areas:
+    "tit . ."
+    ". img ."
+    ". . cont";
+    grid-column-gap: 10px;
+    grid-row-gap: 50px;
+    justify-items: center;
+    align-items: center;
+    justify-content: start;
+    background: rgb(44,184,211);
+background: linear-gradient(90deg, rgba(44,184,211,1) 0%, rgba(17,205,238,1) 29%, rgba(26,229,217,1) 100%);
+;
+    /*padding: 117px;*/
+    /*background-color: white;*/
+}
+
+.container-about-us h1{
+    grid-area: tit;
+    background-color: transparent;
+}
+.container-about-us img{
+    grid-area: img;
+    background-color: transparent;
+    width: 70%;
+}
+.container-about-us .content{
+    grid-area: cont;
+    background-color: transparent;
+}
+.container-about-us .content p{
+    list-style-type: none;
+    font-family: Roboto , sans-serif;
+    color: #D3472C;
+}
+
+.container-about-us .content ul{
+    list-style-type: none;
+    font-family: "Roboto Thin", sans-serif;
+    color: lightskyblue;
+}
+/*Who we are section*/
+.container-who-we-are{
+    padding: 150px;
+    background: rgb(44,184,211);
+background: linear-gradient(90deg, rgba(44,184,211,1) 0%, rgba(17,205,238,1) 29%, rgba(26,229,217,1) 100%);
+;
+}
+.container-persons {
+    display: flex;
+    flex-wrap: wrap;
+}
+.container-persons .card-person {
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+    height: 400px;
+    background-color: #D3472C;
+    border-radius: 10px;
+    box-shadow: 5px 3px #0000005e;
+    color: #2CB8D3;
+    font-family: "Roboto Thin", sans-serif;
+    font-size: 20px;
+}
+.container-persons .card-person img {
+    width: 80%;
+}
+/*Who we are section end*/
+
+/*What we do section*/
+.container-what-we-do{
+    display: grid;
+    grid-template-areas:
+    "cont2 . ."
+    ". img2 ."
+    ". . tit2";
+    align-items: center;
+    justify-content: space-evenly;
+    background: rgb(44,184,211);
+background: linear-gradient(90deg, rgba(44,184,211,1) 0%, rgba(17,205,238,1) 29%, rgba(26,229,217,1) 100%);
+;
+    padding: 150px;
+}
+
+/*.title-what-we-do{
+    font-family: Roboto , sans-serif;
+    color: #234a6a;
+    font-weight: bolder;
+    font-size: 60px;
+    margin-left: 10%;
+    justify-self: center;
+}*/
+
+.subtitle-what-we-do{
+    grid-area: tit2;
+    font-family: Roboto , sans-serif;
+    color: D3472C;
+    font-weight: inherit;
+    font-size: 45px;
+}
+
+.sections_text-what-we-do{
+    grid-area: cont2;
+    font-family: Roboto , sans-serif;
+    color: D3472C;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.container-what-we-do img{
+    width: 100%;
+    grid-area: img2;
+}
+
+.sections_text-what-we-do ul {
+    font-family: Roboto , sans-serif;
+    color: skyblue;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.container-what-we-do ul li{
+    margin-left: 5%;
+}
+/*What we do section END*/
+
+/*What we know section*/
+.container-what-we-know{
+    background: rgb(44,184,211);
+background: linear-gradient(90deg, rgba(44,184,211,1) 0%, rgba(17,205,238,1) 29%, rgba(26,229,217,1) 100%);
+;
+    padding: 120px;
+}
+
+.container-techs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.container-techs img{
+    margin: 5px;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+}
+/*What we know section end*/
+
+/*Where we are section*/
+
+.container-where-we-are{
+    background: rgb(44,184,211);
+background: linear-gradient(90deg, rgba(44,184,211,1) 0%, rgba(17,205,238,1) 29%, rgba(26,229,217,1) 100%);
+;
+    justify-content: center;
+    padding: 200px;
+}
+/*Where we are section end*/
+
+.message_box {
+    width: 45%;
+    height: 150px;
+    margin: auto;
+    position: relative;
+}
+
+.container-contact-us{
+    display: grid;
+    grid-template-areas:
+    "contact contact contact contact"
+    "phone form form form";
+    grid-column-gap: 0px;
+    background: rgb(44,184,211);
+    background: linear-gradient(90deg, rgba(44,184,211,1) 0%, rgba(17,205,238,1) 29%, rgba(26,229,217,1) 100%);
+;
+    padding: 100px;
+}
+.sections_text-contact-us {
+    font-family: Roboto , sans-serif;
+    color: #062d4d;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.container-contact-us h1{
+    grid-area: contact;
+}
+.container-contact-us img{
+    grid-area: phone;
+    width: 40%;
+}
+.container-contact-us .subtitle2{
+    grid-area: form;
+}
+
+.container-join-us{
+    display: flex;
+    background: rgb(44,184,211);
+background: linear-gradient(90deg, rgba(44,184,211,1) 0%, rgba(17,205,238,1) 29%, rgba(26,229,217,1) 100%);
+;
+    padding: 120px;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-join-us img{
+    width: 40%;
+}
+
+.container-join-us a{
+    text-decoration: none;
+}
+
+.send_button {
+    width: 10%;
+    height: 40px;
+    margin: auto;
+    position: relative;
+}
+
+/*Return button*/
+.return_button{
+    text-decoration: none;
+    position: fixed;
+    bottom: 0;
+    right: 10px;
+    background-color: transparent;
+    font-family: Roboto , sans-serif;
+    color: lightskyblue;
+}
+/*Return button end */
+
+/*FOOTER*/
+.footer{
+    grid-area: footer;
+    text-decoration: none;
+    background: rgb(44,184,211);
+    background: linear-gradient(90deg, rgba(44,184,211,1) 0%, rgba(17,205,238,1) 29%, rgba(26,229,217,1) 100%);
+    display: flex;
+    justify-content: flex-start;
+    height: 25px;
+}
+
+.footer ul{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 40px;
+}
+.footer li{
+    margin-right: 20px;
+    list-style-type: none;
+}
+
+.footer ul li a{
+    text-decoration: none;
+    font-family: 'Roboto' , sans-serif;
+    color: #D3472C;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.footer ul li a:hover{
+    color: #9a1e06;
+    text-decoration: underline;
+}
+/*FOOTER END*/

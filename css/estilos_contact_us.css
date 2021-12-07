@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,100;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: white;
+}
+
+.searches{
+    background: rgb(250,252,254);
+    background: linear-gradient(90deg, rgba(250,252,254,1) 0%, rgba(113,199,255,1) 50%, rgba(0,151,255,0.4962185557816877) 100%);
+}
+
+.title{
+    color: #4682b4;
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    text-align: match-parent;
+    line-height: 80px;
+    font-weight: bold;
+}
+
+.sections_text{
+    color: #4682b4;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
+    margin: 10px;
+    font-size: 35px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.sections_text ul{
+    color: #4682b4;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
+    margin: 10px;
+    font-size: 25px;
+}
+
+.sections_text ul li{
+    color: #4682b4;
+    font-family: 'Roboto', sans-serif;
+    padding: 0px;
+    margin: 10px;
+    font-size: 20px;
+    font-style: oblique;
+}
+
+.join-form{
+    color: #084577;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.send_button {
+    width: 10%;
+    height: 40px;
+    margin: auto;
+    position: relative;
+}
+
+.message_box{
+    width:45%;
+    height:150px;
+    margin:auto;
+    position:relative;
+}
+
+.return_button{
+    text-decoration: underline;
+    color: #4682b4;
+    font-family: "Roboto Thin", sans-serif;
+    padding: 10px;
+    margin: 10px;
+    font-size: 10px;
+}
+
+/*Return button*/
+.return_button{
+    text-decoration: none;
+    position: fixed;
+    bottom: 0;
+    right: 10px;
+    background-color: transparent;
+    font-family: Roboto , sans-serif;
+    color: #062d4d;
+}
+/*Return button end */
