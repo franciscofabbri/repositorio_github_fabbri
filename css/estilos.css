@@ -14,26 +14,25 @@ header{
     top: 0;
     z-index: 1;
 }
-.nav_bar{
-    display: flex;
-    text-decoration: none;
-    background-color: transparent;
-    justify-content: center;
+.navbar-light .navbar-brand{
+    font-family: Roboto , sans-serif;
+    color: #216094;
+    font-weight: bold;
 }
-.logo{
-    display: flex;
+.navbar-light .navbar-nav .nav-link.active, .navbar-light{
+    font-family: Roboto , sans-serif;
+    color: #2b96f1;
 }
-.logo h1{
-    display: flex;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-    color: steelblue;
-    align-items: center;
-    justify-content: center;
-    top: 15px;
+.navbar-light .navbar-nav .nav-link{
+    font-family: Roboto , sans-serif;
+    color: #2b96f1;
 }
-.nav_bar img{
-    width: 10%;
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #216094;
+    text-decoration: underline;
 }
+
+
 .nav_bar ul{
     display: flex;
     align-items: center;
@@ -47,7 +46,7 @@ header{
     text-decoration: none;
     font-family: 'Roboto' , sans-serif;
     color: steelblue;
-    font-size: 14px;
+    font-size: 60%;
     font-weight: bold;
 }
 .nav_bar ul li a:hover{
@@ -201,15 +200,18 @@ background: linear-gradient(90deg, rgba(44,184,211,1) 0%, rgba(17,205,238,1) 29%
 .container-persons {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
 }
 .container-persons .card {
     margin: 10px;
     background-color: #D3472C;
     color: #2CB8D3;
     font-family: "Roboto Thin", sans-serif;
+    width: 100%;
 }
 
-/*Who we are section end*/
+
+    /*Who we are section end*/
 
 /*What we do section*/
 .container-what-we-do{

@@ -11,23 +11,43 @@
 <body>
 <section id="home"></section>
 <header>
-    <div id="general_container">
-        <nav class="nav_bar">
-            <div class="logo">
-                <img src="assets/images/logo.png"/>
-                <h1 class="company_name">DEV. Factory</h1>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand">
+                <img src="assets/images/logo.png" alt="" width="30" height="24" class="d-inl">
+                DEV. Factory
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#who_we_are">Who we are</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#what_we_do">Whate we do</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#what_we_know">What we know</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#where_we_are">Find us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#work_with_us">Join us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact_us">Contact us</a>
+                    </li>
             </div>
-            <ul>
-                <li><a href="#about_us">About us</a></li>
-                <li><a href="#who_we_are">Who we are</a></li>
-                <li><a href="#what_we_do">What we do</a></li>
-                <li><a href="#what_we_know">What we know</a></li>
-                <li><a href="#where_we_are">Where we are</a></li>
-                <li><a href="#work_with_us">Work with us</a></li>
-                <li><a href="#contact_us">Contact us</a></li>
-            </ul>
-        </nav>
-    </div>
+        </div>
+    </nav>
 </header>
 <a class="return_button" href="#home"><img src="assets/images/home_button.png"></a>
 
@@ -59,35 +79,40 @@
 
 <div class="container-who-we-are" id="who_we_are">
     <div class="container-persons">
-        <div class="card" style="width: 18rem;">
-            <img src="assets/images/steve_jobs.jfif" class="card-img-top" alt="...">
-            <div class="card-body">
-                <p class="card-text">The CEO leads us towards being the leaders of the market. He spends his free time
-                    reading in the garden
-                    or redesigning his house</p>
+        <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+                <img src="assets/images/profile_pic.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Steve</h5>
+                    <p class="card-text">The CEO leads us towards being the leaders of the market</p>
+                </div>
             </div>
         </div>
-        <div class="card" style="width: 18rem;">
-            <img src="assets/images/elon.jfif" class="card-img-top" alt="...">
-            <div class="card-body">
-                <p class="card-text">The COO finds the best business to pursue.Outside the office he drives racing cars
-                    or flies his
-                    airplane</p>
+        <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+                <img src="assets/images/profile_pic.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Elon</h5>
+                    <p class="card-text">The COO finds the best business to pursue</p>
+                </div>
             </div>
         </div>
-        <div class="card" style="width: 18rem;">
-            <img src="assets/images/bill_gates.jfif" class="card-img-top" alt="...">
-            <div class="card-body">
-                <p class="card-text">The CTO leads us in being at the top of the game. He spends most of his free time
-                    at the lake with his
-                    family</p>
+        <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+                <img src="assets/images/profile_pic.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Bill</h5>
+                    <p class="card-text">The CTO leads us in being at the top of the game</p>
+                </div>
             </div>
         </div>
-        <div class="card" style="width: 18rem;">
-            <img src="assets/images/jeff_bezos.jfif" class="card-img-top" alt="...">
-            <div class="card-body">
-                <p class="card-text">The CFO he is invaluable, he help our business trhive. He's an enthusiastic
-                    traveler</p>
+        <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+                <img src="assets/images/profile_pic.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Jeff</h5>
+                    <p class="card-text">The CFO he is invaluable, he help our business trhive</p>
+                </div>
             </div>
         </div>
     </div>
