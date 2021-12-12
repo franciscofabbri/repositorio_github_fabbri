@@ -202,21 +202,13 @@ background: linear-gradient(90deg, rgba(44,184,211,1) 0%, rgba(17,205,238,1) 29%
     display: flex;
     flex-wrap: wrap;
 }
-.container-persons .card-person {
-    width: 200px;
-    padding: 10px;
+.container-persons .card {
     margin: 10px;
-    height: 400px;
     background-color: #D3472C;
-    border-radius: 10px;
-    box-shadow: 5px 3px #0000005e;
     color: #2CB8D3;
     font-family: "Roboto Thin", sans-serif;
-    font-size: 20px;
 }
-.container-persons .card-person img {
-    width: 80%;
-}
+
 /*Who we are section end*/
 
 /*What we do section*/
@@ -335,7 +327,7 @@ background: linear-gradient(90deg, rgba(44,184,211,1) 0%, rgba(17,205,238,1) 29%
     font-family: Roboto , sans-serif;
     color: #062d4d;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 25%;
 }
 
 .container-contact-us h1{
