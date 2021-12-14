@@ -6,7 +6,6 @@
     /*list-style-type: none;*/
 }
 
-
 /* NAVBAR */
 header{
     position: -webkit-sticky;
@@ -29,28 +28,6 @@ header{
 }
 .navbar-light .navbar-nav .nav-link:hover{
     color: #216094;
-    text-decoration: underline;
-}
-
-
-.nav_bar ul{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
-.nav_bar li{
-    margin-left: 20px;
-    list-style-type: none;
-}
-.nav_bar ul li a{
-    text-decoration: none;
-    font-family: 'Roboto' , sans-serif;
-    color: steelblue;
-    font-size: 60%;
-    font-weight: bold;
-}
-.nav_bar ul li a:hover{
-    color: lightskyblue;
     text-decoration: underline;
 }
 /* END NAVBAR */
@@ -110,16 +87,6 @@ video {
     text-align: center;
 }
 
-/*.overlay ul li {
-    background: #000 none repeat scroll 0 0;
-    color: tan;
-    font-weight: 600;
-    margin: 2rem 3rem 0;
-    mix-blend-mode: overlay;
-    padding: 5px 15px;
-    text-align: center;
-}*/
-
 .titles{
     font-family: Roboto , sans-serif;
     color: #D3472C;
@@ -131,14 +98,17 @@ video {
     font-family: Roboto , sans-serif;
     color: #D3472C;
     font-weight: inherit;
-    font-size: 50px;
+    font-size: 300%;
 }
+
+
 
 .sections_text {
     font-family: Roboto , sans-serif;
-    color: b45346;
+    color: #b45346;
     font-weight: bold;
-    font-size: 20px;
+    font-size:
+;
 }
 
 .sections_text ul{
@@ -170,11 +140,7 @@ video {
     grid-area: tit;
     background-color: transparent;
 }
-/*.container-about-us img{
-    grid-area: img;
-    background-color: transparent;
-    width: 70%;
-}*/
+
 .container-about-us .content{
     grid-area: cont;
     background-color: transparent;
@@ -228,14 +194,7 @@ background: linear-gradient(90deg, rgba(44,184,211,1) 0%, rgba(17,205,238,1) 29%
     padding: 150px;
 }
 
-/*.title-what-we-do{
-    font-family: Roboto , sans-serif;
-    color: #234a6a;
-    font-weight: bolder;
-    font-size: 60px;
-    margin-left: 10%;
-    justify-self: center;
-}*/
+
 
 .subtitle-what-we-do{
     grid-area: tit2;
@@ -296,15 +255,38 @@ background: linear-gradient(90deg, rgba(44,184,211,1) 0%, rgba(17,205,238,1) 29%
 
 /*Where we are section*/
 
+.location_title{
+    font-family: Roboto , sans-serif;
+    color: #D3472C;
+    font-size: 1rem;
+}
+
 .container-where-we-are{
-    display: flex;
+    /*display: flex;*/
     align-items: center;
     justify-content: center;
     background: rgb(44,184,211);
     background: linear-gradient(90deg, rgba(44,184,211,1) 0%, rgba(17,205,238,1) 29%, rgba(26,229,217,1) 100%);
     justify-content: center;
-    padding: 200px;
+    padding: 10%;
 }
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:30%;
+    position:relative;
+    height:0;
+}
+
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:50%;
+    width:50%;
+    position:absolute;
+}
+
+
+
 /*Where we are section end*/
 
 .message_box {
@@ -329,7 +311,7 @@ background: linear-gradient(90deg, rgba(44,184,211,1) 0%, rgba(17,205,238,1) 29%
     font-family: Roboto , sans-serif;
     color: #062d4d;
     font-weight: bold;
-    font-size: 25%;
+    font-size: 1rem;
 }
 
 .container-contact-us h1{
